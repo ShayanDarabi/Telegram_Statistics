@@ -12,8 +12,7 @@ from wordcloud import WordCloud
 
 
 class ChatStatistics:
-    def __init__(self,jsonfile: Union[str,Path]):
-        
+    def __init__(self,jsonfile: Union[str,Path]):        
         with open(Path(jsonfile)) as f:
             self.chat_data = json.load(f)
 
